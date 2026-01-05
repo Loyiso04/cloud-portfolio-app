@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyiso Khumalo | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+        <header class="header">
+            <a href="#home" class="logo">Loyiso
+                <span>Khumalo</span></a>
+
+                <i class='bx bx-menu'id="menu-icon"></i>
+            
+                <nav class="navbar">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications-section">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+        </header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, I'm <span>Loyiso</span></h1>
+        <h3 class="text-animation">I'm a <span></h3></span>
+        <p>I have a passion for web developement and i enjoy creating visually appealing and functional websites.
+            I specialize in frontend and backend development, software development, and 
+            Azure Cloud Computing, combining creativity with technical skills to deliver
+            seamless user experiences. I love building projects that solve real world problems
+            and continuously learning new technologies to grow as a developer.
+        </p>
+
+       <div class="social-icons">
+        <a href="https://www.linkedin.com/in/loyiso-khumalo-a6b058240/" target="_blank" rel="noopener">
+        <i class='bx bxl-linkedin'></i>
+        </a>
+
+        <a href="https://wa.me/+27714547563" target="_blank" rel="noopener">
+        <i class='bx bxl-whatsapp'></i>
+        </a>
+
+        <a href="https://twitter.com/LoyisoKhumalo8" target="_blank" rel="noopener">
+        <i class='bx bxl-twitter'></i></a>
+
+        <a href="https://www.instagram.com/loyiso__khumalo" target="_blank" rel="noopener">
+        <i class='bx bxl-instagram'></i>
+        </a>
+
+       </div>     
+
+       <div class="btn-group">
+        <a href="#"class="btn" id="hireBtn">Hire</a>
+        <a href="#contact" class="btn" id="contactBtn">Contact</a>
+       </div>  
+    </div>
+       <div class="home-img">
+        <img src="{{ url_for('static', filename='images/IMG_2517-COPY.2.jpeg') }}" alt="image">
+
+    </div>
+</section> 
+
+<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="timeline-items">
+        
+        <div class="timeline-item">
+        <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <h3>High School</h3>
+                <p> Went to George Campbell Technical High School, specializing in 
+                    Electrical Technology and Power Systems. Gained hands-on experience 
+                    solving real engineering problems through simulations, including troubleshooting
+                    three-phase transformers, motors, and starters. Developed strong understanding of 
+                    RLC circuits, performing calculations for frequency, voltage drop, and other components.
+                    Also gained exposure to Programmable Logic Controllers (PLCs), using logic gates in software
+                    and devices—an experience that sparked my interest in pursuing studies in software development.
+                </p>
+            </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>Education</h3>
+                 <p>Obtained an NQF Level 5 in Information Technology for Systems Development.
+                    Gained a solid understanding of business needs and how to apply them in IT.
+                    Learned to design, develop, and test software, as well as manage databases using C#.
+                    Gained experience in application and web-based development with Python, HTML, CSS, and JavaScript. 
+                    Also obtained internationally recognized Microsoft Azure certifications, specializing in Azure Fundamentals 
+                    (AZ-900), Azure Developer Associate (AZ-204), and Azure DevOps Engineer (AZ-400).</p> 
+            </div>
+        </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+            <h3>Internship</h3>
+            <p>Completed online internships in both front-end and back-end development. 
+               During my front-end web development internship with Oasis Inforbyte, I built responsive websites using HTML, CSS, and JavaScript,
+               gaining experience in improving layouts, styling, and basic interactivity to ensure smooth website performance. In my back-end web
+               development internship with Talent4Startups, I gained experience building APIs and integrating them with front-end systems. I also 
+               developed and managed databases using PostgreSQL and NoSQL, ensuring efficient data storage and retrieval.</p>
+            </div>
+    </div>
+    </div>   
+</section>
+
+<section class="skills" id="skills">
+    <div class="skills-div">
+        <div class="container">
+            <h1 class="skills-heading">Obtained Skills and Certifications</h1>
+            <div class="panels">
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <h2>Python programming </h2>
+                        <p>Achieved an international certification as a Pearson Vue IT Specialist in Python programming.</p>
+                     
+                    </div>
+                </div>
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div>
+                        <h2>Azure Cloud Computing</h2>
+                        <p>Obtained Azure 900, Azure 204 and
+                             Azure DevOps Certifications(Azure 400) alongside
+                              hands-on Experience with Virtual Labs</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <div>
+                        <h2>NQF-5 Systems Development</h2>
+                        <p>During my studies, I gained hands-on experience in C#
+                             programming and relational database management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="certifications-section">
+    <h2 class="section-title">Obtained Certifications</h2>
+
+    <div class="certifications-grid">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:8976a75b-0eda-4d73-934a-8974bd4dce91" target="_blank"
+        class="cert-card"><i class="fa-solid fa-certificate"></i>
+            <h3>Python – Pearson Vue</h3>
+            <p>IT Specialist Certification</p>
+            <p class="hover">Click To View</p>
+        </a>
+
+        <a href="https://learn.microsoft.com/en-us/users/loyisokhumalo-8954/credentials/83634a618001d7a6" target="_blank"
+        class="cert-card"><i class="fa-solid fa-certificate"></i>
+            <h3>Microsoft Azure AZ-900</h3>
+            <p>Azure Fundamentals</p>
+            <p class="hover">Click To View</p>
+        </a>
+
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/LoyisoKhumalo-8954/CF44B27446338974?sharingId=77C97F472DE2B12F" target="_blank"
+        class="cert-card"><i class="fa-solid fa-certificate"></i>
+            <h3>Microsoft Azure AZ-204</h3>
+            <p>Developing Solutions for Azure</p>
+            <p class="hover">Click To View</p>
+        </a>
+
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/LoyisoKhumalo-8954/9C61089200293C2A?sharingId=77C97F472DE2B12F"target="_blank" 
+        class="cert-card"><i class="fa-solid fa-certificate"></i>
+            <h3>Microsoft Azure AZ-400</h3>
+            <p>DevOps Engineer Expert</p>
+            <p class="hover">Click To View</p>
+        </a>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form method="POST" action="/contact">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="name"placeholder="Full Name" required>
+                <input type="email"name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+        </div>
+
+        <div class="input-group-2">
+            <textarea name="message" cols="30" rows="10"
+            placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+         <div id="flash-message" data-scroll="true" class="flash-message">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+</section>
+
+
+ 
+<footer class="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+            <a href="#education">Education</a>
+        </li>
+
+        <li>
+            <a href="#certifications-section">Certifications</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        
+        <li>
+            <a href="#home">Home</a>
+        </li>
+    </ul>
+
+    <p class="copyright">
+        @ Loyiso Khumalo | All Rights Reserved
+    </p>
+</footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://kit.fontawesome.com/47cf3f41e8.js" crossorigin="anonymous"></script>
+
+</body>
