@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-
-app = Flask(__name__)
-#app.secret_key = "super-secret-key"
-
 import os
 
+app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-key")
 
 @app.route("/")
@@ -27,8 +24,7 @@ def contact():
 
     flash(" Your message has been sent successfully!")
 
-    # Redirect BACK to contact section
     return redirect(url_for("home"))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
