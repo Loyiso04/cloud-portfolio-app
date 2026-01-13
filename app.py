@@ -26,6 +26,7 @@ class Contact(db.Model):
     def __repr__(self):
         return f"<Contact {self.email}>"
 
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -46,8 +47,7 @@ def contact():
     return redirect(url_for("home"))
 
 
-@app.before_first_request
-def create_tables():
+with app.app_context():
     db.create_all()
 
 if __name__ == "__main__":
