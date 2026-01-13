@@ -26,7 +26,6 @@ class Contact(db.Model):
     def __repr__(self):
         return f"<Contact {self.email}>"
 
-
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -46,9 +45,7 @@ def contact():
     flash("Your message has been saved successfully!")
     return redirect(url_for("home"))
 
-
-with app.app_context():
-    db.create_all()
-
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
     app.run(debug=True)
